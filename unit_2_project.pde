@@ -3,26 +3,23 @@
 int a,b,c,x;
 
 void setup(){
-  size(400,450);
+  frameRate(30);
+  size(400,440);
+  a=0;
   b=1;
   c=1;
+  x=1;
   
 }
 
 void draw(){
-  //room
-  fill(0);
-  rect(0,0,400,450);
   fill(255);
-  rect(80,50,240,300);
-  fill(0);
-  ellipse(80,50,60,350);
-  ellipse(80,300,60,250);
-  //window
-  
-  //computer
-  
-  //code
-  
   //sky
+  //computer
+  rect(20,160,360,280);
+  //code
+  rect(20,160,360,15);
+  fill(48, 23, 83);
+  rect(20,175,360,265);
+
 }
