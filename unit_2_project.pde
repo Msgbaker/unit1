@@ -1,25 +1,49 @@
 //unit 2 project
 
-int a,b,c,x,text;
+int a,b,c,d,e,f,g,x,text;
 
 void setup(){
   frameRate(10);
   size(400,440);
-  a=0;
-  b=0;
+  a=2;
+  b=2;
+  c=2;
+  d=2;
+  e=2;
+  f=2;
+  g=2;
   text=219;
-  x=-0.001*x;
 
 }
 
 void draw(){
   fill(255);
-  line(x,200,x,200);
   strokeWeight(.5);
   stroke(0);
   x=x+1;
   if(x>=15){
     text=0;
+  }
+  if(x>=30){
+    a=1;
+  }
+  if(x>=45){
+    b=1;
+  }
+  if(x>=60){
+    c=1;
+  }
+  if(x>=75){
+  d=1;
+  }
+  if(x>=90){
+  e=1;
+  }
+  if(x>=105){
+  f=1;
+  }
+  if(x>=120){
+  g=1;
   }
   //sky
   //computer
@@ -67,10 +91,29 @@ void draw(){
   text("unit 2 project",52,217);
   text("1",41,223.34);
   text("2",41,227+text);
+  text("3",41,a*230.66+text);
+  text("4",41,b*234.72+text);
+  text("5",41,c*238.6+text);
+  text("6",41,d*242.8+text);
+  text("7",41,e*246.9+text);
   //number gap 3.66
   //code
+  //line 1
   fill(0,255,0);
   text("int",48,223.34);
   fill(255);
-  text("a,b,c,x;",57,223.34);
+  text("a;",57,223.34);
+  //line 2
+  fill(255,0,10);
+  text("void",48,227+text);
+  fill(255,160,122);
+  //line3
+  text("size",52,a*230.66+text);
+  //line2
+  text("setup",61,227+text);
+  fill(255);
+  text("(){",76,227+text);
+  //line 3
+  text("(200);",62,a*230.66+text);
+  text("a=1;",52,b*234.72+text);
 }
