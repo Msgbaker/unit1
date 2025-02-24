@@ -1,6 +1,6 @@
 //unit 2 project
 
-int a,b,c,d,e,f,g,x,text;
+int a,b,c,d,e,f,g,x,y,z,text;
 
 void setup(){
   frameRate(10);
@@ -13,14 +13,19 @@ void setup(){
   f=2;
   g=2;
   text=219;
-
+  
 }
 
 void draw(){
+  background(255);
   fill(255);
   strokeWeight(.5);
   stroke(0);
+  y=z*z*1/10;
+  z=z-1;
   x=x+1;
+  fill(0);
+  ellipse(y-50,z+200,30,30);
   if(x>=15){
     text=0;
   }
